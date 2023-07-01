@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(./image/immg.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: left;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+.header-content {
+    margin: 90px 90px;
+    color: rgb(50, 82, 104);
+    text-align: center;
+}
+
+.header-content h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(22, 34, 105);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: rgb(243, 65, 175);
+    font-size: 1.5rem;
+}
+.navbar .logo{
+    margin:0 15px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 0 30px;
+    font-size: 1.5rem;
+    text-decoration: none;
+
+}
+
+.header-content h1 {
+    font-size: 7vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.ctn {
+    padding: 8px 15px;
+    background: rgb(241, 75, 75);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+
+.menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color: rgb(97, 49, 185);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.row.col {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.row .col h4{
+    color: rgb(23, 23, 99);
+}
+
+.events .row {
+    margin-top: 50px;
+}
+
+
+.events h4 {
+    font-size: 3vmin;
+    color: rgb(46, 29, 29);
+    margin: 20px auto;
+    align-items: center;
+    justify-content: space-evenly;
+
+    display: flex;
+
+}
+
+p {
+    color: rgb(44, 28, 28);
+    padding: 0 40px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    display: flex;
+
+}
+
+.events .ctn {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+
+}
+
+.explore {
+    width: 100%;
+    height: 80vh;
+    background-image: url(./image/bg2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+
+.explore-content {
+    width: 60%;
+    padding: 50px;
+    color: rgb(241, 68, 15);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore-content h1 {
+    font-size: 7vmin;
+
+}
+
+.explore-content .line {
+    margin-bottom: 50px;
+}
+
+.explore-content h2 {
+    color: rgb(99, 27, 6);
+    
+}
+
+.explore-content .ctn {
+    margin-top: 40px;
+}
+
+footer {
+    background-color: rgba(39, 39, 206, 0.712);
+    height: 200px;
+    font-size: 1rem;
+}
+
+.footer {
+    display: flex;
+    padding: 23px 110px;
+    justify-content: space-evenly;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer>div {
+    width: 223px;
+}
+
+footer .footer-rights {
+    text-align: center;
+    color: rgb(53, 53, 31);
+    padding: 12px 0;
+}
+/*For product details*/
+
+
+
+
+
+@media only screen and (max-width:800px) {
+    .navbar {
+        padding: 0;
+
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .logo {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        background: rgb(208, 224, 181);
+        margin-top: -900px;
+        transition: all 0.5s ease;
+    }
+    .navbar .logo{
+        margin:0 5px;
+    }
+
+    .mobile-menu {
+        margin-top: 0px;
+        border-bottom-right-radius: 30%;
+    }
+
+    .nav-links li {
+        margin: 30px auto;
+
+    }
+
+    .row {
+        flex-direction: column;
+
+    }
+
+    .row .col {
+        margin: 20px auto;
+
+
+    }
+
+    .col img {
+        max-width: 90%;
+    }
+    .footer{
+        display:flex;
+        flex-direction: column;
+        height: 30vh;
+        margin: 23px 0;
+        justify-content: space-evenly;
+     }
+     .footer .footer-rights{
+         text-align: center;
+         padding: 23px 0;
+        }
+
+}
+
+/*animation*/
+img {
+    transition: transform .3s ease;
+}
+
+img:hover {
+    transform: scale(1.1);
+}
+
+.navbar .nav-links a:hover {
+    
+    color: rgb(49, 28, 10);
+}
+.ctn:hover{
+    color:whitesmoke;
+    background-color: rgb(231, 33, 155);
+}

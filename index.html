@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>SHOP</title>
+        <link rel="icon" href="./image/logo.png"/>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Poppins:wght@400;600&family=Work+Sans:ital,wght@0,500;0,800;1,400&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar">
+            <h1 class="logo"><img src="./image/logo.png" alt=""height="34px"width="34px" >SHOP</h1>
+            <ul class="nav-links">
+                <li><a href="#Home"><strong>Home</strong></a></li>
+                <li><a href="#Shop"><strong>Shop</strong></a></li>
+                <li><a href="#"><strong>About Us</strong></a></li>
+                <li class="ctn" ><a href="#Contact"><strong>Contact</strong></a></li>
+            </ul>
+            <img src="./image/menu-bar.png" alt="" class="menu-btn">
+        </nav> 
+        <header id="Home"> 
+            <div class="header-content">
+                 <h1><strong>Welcome To Our Shopping Site!</strong></h1>
+                 <h3>All Items Available With AFFORDABLE price</h3>
+                <div class = "line"></div>
+                <h1>SHOP effortlessly with us </h1>
+                <a href="./index2.html" class="ctn">Sign In</a>
+            </div>
+        </header>
+        <!-- events-->
+        <section class="events" id="Shop">
+            <div class="title">
+                <h1>Men's Section</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./image/shirt1.jpg" height="260px" width="260px">
+                    <h4>T-Shirt</h4>
+                    <p><strong>87% off</strong> &#8377 176.00</p>
+                    <a href="./index3.html" class="ctn">More Details</a>
+                </div>
+                <div class="col">
+                    <img src="./image/shirt3.jpg" height="260px" width="260px">
+                    <h4>Comfy Shirt</h4>
+                    <p><strong>77% off</strong> &#8377 386.00</p>
+                    <a href="./index7.html" class="ctn">More Details</a>
+                </div>
+                <div class="col">
+                    <img src="./image/shirt4.jpg" height="260px" width="260px">
+                    <h4>Stylist Shirt</h4>
+                    <p><strong>67% off</strong> &#8377 486.00</p>
+                    <a href="./index8.html" class="ctn">More Details</a>
+                </div>
+            </div>
+        </section>
+        <section class ="explore">
+            <div class="explore-content">
+             <h1>Best Deals With BEST SELLERS!</h1>
+             <div class="line"></div>
+             <h2>Best offers <strong>97% off HURRY UP!</strong></h2>
+             <a href="#" class="ctn">
+             Learn more !
+             </a>
+           </div>
+        </section>
+        <section class="events">
+            <div class="title">
+                <h1>Women's Section</h1>
+                <div class="line"></div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="./image/kurti2.jpg" height="250px" width="200px">
+                    <h4>Kurta</h4>
+                    <p><strong>87% off</strong> &#8377 386.00</p>
+                    <a href="./index4.html" class="ctn">More Details</a>
+                </div>
+                <div class="col">
+                    <img src="./image/kurti3.jpg" height="250px" width="200px">
+                    <h4>Stylist Kurta</h4>
+                    <p><strong>67% off</strong> &#8377 586.00</p>
+                    <a href="./index5.html" class="ctn">More Details</a>
+                </div>
+                <div class="col">
+                    <img src="./image/kurti4.jpg" height="250px" width="200px">
+                    <h4>Fabric Kurta</h4>
+                    <p><strong>77% off</strong> &#8377 286.00</p>
+                    <a href="./index6.html" class="ctn">More Details</a>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer" id="Contact">
+                <div class="footer-first">
+                    <h2><img src="./image/logo.png" alt="" height="20px"width="20px">SHOP</h2>
+                </div>
+                <div class="footer-second">
+                    <ul>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#Shop">Shop</a></li>
+                        <li><a href="#">About Us</a></li>
+                        
+                    </ul>
+                </div>
+                <div class="footer-third">
+                    <ul>
+                    
+                        <li><strong>Contact</strong></li>
+                        <div>Mob:9145679045</div>
+                        <div>Email:<u>shop6@gmail.com</u></div>
+                        
+                    </ul>
+                </div>
+                <div class="footer-fourth">
+                    <ul>
+                        
+                        <li><strong>Social media:</strong></li>
+                        <div><h4><img src="./image/fb.png" alt="" height="19px"width="19px">shop.fb</h4></div>
+                        <div><h4><img src="./image/instaa.png" alt="" height="19px"width="19px">@shop_withus</h4></div>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-rights">
+                Copyright &#169; www.shop.com | All rights reserved
+            </div>
+        </footer>
+        <script>
+            const menuBtn = document.querySelector('.menu-btn');
+            const navlinks = document.querySelector('.nav-links');
+            menuBtn.addEventListener('click',()=>{
+                navlinks.classList.toggle('mobile-menu');
+            })
+        </script>
+
+    </body>
+     </html>
